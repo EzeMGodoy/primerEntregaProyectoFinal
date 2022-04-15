@@ -1,0 +1,530 @@
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+form .btn:hover {
+  background-color: green;
+}
+
+/*     EXTENDS  */
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer";
+}
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer";
+}
+
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn1,
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn2,
+.contenedorBlog .asideBlog aside .asideTexto .botones .boton1,
+.contenedorBlog .asideBlog aside .asideTexto .botones .boton2 {
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+
+.contenedorBlog .contenidoBlog .contenedorDestacado,
+.contenedorBlog .contenidoBlog .articulosSecundarios div .card {
+  margin: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1.2s;
+}
+.contenedorBlog .contenidoBlog .contenedorDestacado:hover,
+.contenedorBlog .contenidoBlog .articulosSecundarios div .card:hover {
+  transform: scale(1.02);
+}
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer";
+}
+
+.contenedorAbout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer";
+}
+
+.contenedorContacto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer";
+}
+
+/* ===== GLOBALES ===== */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f0ea;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+
+hr {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+span {
+  color: green;
+}
+
+/* ========================================== */
+/*                   MENU                     */
+/* ========================================== */
+header {
+  grid-area: header;
+}
+header .navbar {
+  background-color: #b7c3ad;
+}
+header .navbar .container-fluid .navbar-brand .marca {
+  color: #243a24;
+}
+header .navbar .container-fluid .collapse {
+  flex-grow: 0;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #244d24;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
+  color: white;
+}
+
+/*-- ========================================= -- */
+/*--               BANNER                      --*/
+/*-- ========================================= --*/
+.portada {
+  grid-area: portada;
+}
+.portada .banner .wrap {
+  height: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+.portada .banner .wrap .box {
+  flex-basis: 55%;
+  align-self: center;
+  padding-left: 50px;
+}
+.portada .banner .wrap .box .textoBanner1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+.portada .banner .wrap .box .textoBanner2 {
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 0.9;
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+.portada .banner .wrap .box .textoBanner3 {
+  color: #fff;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-style: italic;
+  text-align: left;
+}
+
+/*-- ========================================= --*/
+/*--                   FOOTER                  --*/
+/*-- ========================================= --*/
+footer {
+  grid-area: footer;
+  background: #b7c3ad;
+  min-height: 6.25rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .derechos {
+  color: darkgreen;
+  text-align: center;
+  padding: 10px 10px 0;
+}
+footer #iconos a .bi {
+  font-size: 1.625rem;
+  padding: 0 8px;
+  color: darkgreen;
+}
+
+/*     EXTENDS  */
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer";
+}
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer";
+}
+
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn1,
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn2,
+.contenedorBlog .asideBlog aside .asideTexto .botones .boton1,
+.contenedorBlog .asideBlog aside .asideTexto .botones .boton2 {
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+
+.contenedorBlog .contenidoBlog .contenedorDestacado,
+.contenedorBlog .contenidoBlog .articulosSecundarios div .card {
+  margin: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1.2s;
+}
+.contenedorBlog .contenidoBlog .contenedorDestacado:hover,
+.contenedorBlog .contenidoBlog .articulosSecundarios div .card:hover {
+  transform: scale(1.02);
+}
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer";
+}
+
+.contenedorAbout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer";
+}
+
+.contenedorContacto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer";
+}
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+form .btn:hover {
+  background-color: green;
+}
+
+/*-- ========================================= -- */
+/*--              CAPACITACIONES.HTML          --*/
+/*-- ========================================= --*/
+.contenedorCapacitaciones .portada .bannerCapacitaciones {
+  display: flex;
+  max-width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bannerCapacitaciones1.webp);
+}
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .textoBanner1 {
+  color: green;
+}
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
+  display: flex;
+  margin-top: 7px;
+  flex-flow: row wrap;
+  gap: 5px;
+}
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn1:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn2 {
+  border: 2px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn2:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.contenedorCapacitaciones #intro {
+  grid-area: zona1;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.contenedorCapacitaciones #intro .tituloIntro {
+  text-align: center;
+  font-size: 2rem;
+}
+.contenedorCapacitaciones #intro .textoIntro {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.9375rem;
+}
+
+.contenedorCapacitaciones .contenidoCapacitaciones {
+  grid-area: contenidoCursos;
+  margin: 0 auto;
+  width: 90%;
+  padding: 60px 0;
+  max-width: 75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5em;
+  flex-wrap: wrap;
+}
+.contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem {
+  padding-bottom: 3em;
+  flex-basis: 17.5rem;
+  max-width: 28.125rem;
+  flex-grow: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido {
+  width: 90%;
+  margin: 0 auto;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido
+  .tarjetaImagen {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2em;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido
+  .tarjetaImagen
+  .tarjetaImg {
+  width: 100%;
+  border-radius: 10px;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido
+  .tarjetaImagen
+  .tarjetaImg:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido
+  .tarjetaTexto
+  .tarjetaTitulo {
+  margin-bottom: 1em;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido
+  .capacitacionesBoton {
+  width: fit-content;
+  border-radius: 5px;
+  padding: 7px 12px;
+  background-color: #4f774f;
+}
+.contenedorCapacitaciones
+  .contenidoCapacitaciones
+  .tarjetaItem
+  .tarjetaContenido
+  .capacitacionesBoton
+  a {
+  color: #fff;
+}
+
+/*     EXTENDS  */
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer";
+}
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer";
+}
+
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn1,
+.contenedorCapacitaciones
+  .portada
+  .bannerCapacitaciones
+  .wrap
+  .box
+  .botones
+  .btn2,
+.contenedorBlog .asideBlog aside .asideTexto .botones .boton1,
+.contenedorBlog .asideBlog aside .asideTexto .botones .boton2 {
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+
+.contenedorBlog .contenidoBlog .contenedorDestacado,
+.contenedorBlog .contenidoBlog .articulosSecundarios div .card {
+  margin: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1.2s;
+}
+.contenedorBlog .contenidoBlog .contenedorDestacado:hover,
+.contenedorBlog .contenidoBlog .articulosSecundarios div .card:hover {
+  transform: scale(1.02);
+}
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer";
+}
+
+.contenedorAbout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer";
+}
+
+.contenedorContacto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer";
+}
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+form .btn:hover {
+  background-color: green;
+}
